@@ -1,0 +1,311 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+background:url(1.jpg)fixed;
+background-position: center;
+background-size: cover;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+.head{
+    background:linear-gradient(#0c192c,white)fixed;
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+ text-shadow: 2px 2px 10px #000;
+ align-items: center;
+ 
+
+}
+
+.parliament{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+}
+
+.gallery{
+    width: 1000px;
+    position: relative;
+    padding: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slid{
+    width: auto;
+    display: flex;
+    animation: slide 16s infinite;
+  }
+  
+  
+  @keyframes slide{
+    0%{
+      transform: translateX(0);
+    }
+    25%{
+      transform: translateX(0);
+    }
+    30%{
+      transform: translateX(-100%);
+    }
+    50%{
+      transform: translateX(-100%);
+    }
+  55%{
+    transform: translateX(-200%);
+  }
+  75%{
+    transform: translateX(-200%);
+  }
+  80%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(-300%);
+  }
+  }
+  h2{
+    text-align: center;
+  }
+  
+  img{
+    width: 100%;
+  
+  }
+
+
+
+#Main{
+    
+    border: 5px solid rgb(14, 14, 14);
+    background:linear-gradient(#0f1c31,rgb(45, 86, 117)) fixed;
+    width: 560px;
+    font-size: 27px;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+  border-radius:20px;
+
+}
+
+ul{
+    margin-left: 30px;
+}
+h2{
+    text-align: center;
+  
+}
+
+#Ministers{
+    border: 5px solid rgb(14, 14, 14);
+    background:linear-gradient(#0f1c31,rgb(45, 86, 117)) fixed;
+    width: 560px;
+    font-size: 27px;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+  border-radius:20px;
+  display: flex;
+}
+
+#Deputy{
+    border: 5px solid rgb(14, 14, 14);
+    background:linear-gradient(#0f1c31,rgb(45, 86, 117)) fixed;
+    width: 650px;
+    font-size: 27px;
+    color: aliceblue;
+    margin-left:auto;
+    margin-right: auto;
+  border-radius:20px;
+  display: flex;
+}
+
+#Councilors{
+    border: 5px solid rgb(14, 14, 14);
+    background:linear-gradient(#0f1c31,rgb(45, 86, 117)) fixed;
+    width: 600px;
+    font-size: 27px;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+  border-radius:20px;
+ 
+}
+
+.school{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+}
+
+.end{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:25 px;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+    bottom: 0;
+    left: 0;
+    width:100%;
+    border-top: 1px solid black;
+    background:linear-gradient(#0c192c,white)fixed;
+}
+
+#preloader{
+    background:#fff url(preloard.gif) no-repeat center center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+@media only screen and (max-width:1000px){
+    .body{
+        background: url(1.jpg);
+            
+    }
+    .head{
+        background:linear-gradient(#0c192c,white)fixed;
+        font-size: 25px;
+        text-align: center;
+        
+    }
+    .parliament{
+        width:30%;
+        height: 30%;
+        align-items: center;
+        display: flex;
+    }
+    .gallery{
+        align-items: center;
+        width:90%;
+        
+        
+    }
+    #Main{
+        font-size: 20px;
+        width: 80%;
+        text-align: left;
+
+    }
+    #Ministers{
+        font-size: 20px;
+        width: 80%;
+        text-align:left;
+    }
+    #Deputy{
+        font-size: 20px;
+        width: 80%;
+        text-align:left;
+    }
+    #Councilors{
+        font-size: 20px;
+        width: 80%;
+        text-align:left;
+    }
+
+    .end{
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    #preloader{
+        background-size: 80%;
+ }
+ #progress{
+  z-index: 1;
+ position: fixed;
+  bottom: 10px;
+  right: 5px;
+  height: 70px;
+  width: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+#progress-value{
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  color: #001a2e;
+}
+li{
+  font-size: 15px;
+}
+
+}
+@keyframes slide {
+    0%{
+      transform: translateX(0);
+    }
+    25%{
+      transform: translateX(0);
+    }
+    30%{
+      transform: translateX(-100%);
+    }
+    50%{
+      transform: translateX(-100%);
+    }
+  55%{
+    transform: translateX(-200%);
+  }
+  75%{
+    transform: translateX(-200%);
+  }
+  80%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(-300%);
+  }
+  }
+
+  #progress{
+    z-index: 1;
+   position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  #progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+  }
